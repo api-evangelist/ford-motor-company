@@ -1,0 +1,93 @@
+{
+    "name": "Ford Motor Company",
+    "description": "Go further than you ever imagined in a new Ford vehicle, built just for you. See our full lineup.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/202-ford-motor-company.jpg",
+    "tags": [
+        "api lifeycle",
+        "api provider",
+        "automobiles",
+        "have api",
+        "have swagger"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/ford-motor-company\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Ford Motor Company",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/202-ford-motor-company.jpg",
+            "humanURL": "https:\/\/developer.ford.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/ford-motor-company-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ford-motor-company.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/ford-motor-company-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Auto Complete API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/202-ford-motor-company.jpg",
+            "humanURL": "https:\/\/developer.ford.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/auto-complete-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/auto-complete-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/auto-complete-api-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Blog",
+            "url": "https:\/\/developer.ford.com\/community\/blogs\/"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "https:\/\/media.ford.com\/content\/fordmedia\/fna\/us\/en\/news.safety-and-technology.rss"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "http:\/\/www.crunchbase.com\/company\/ford"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/ford"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/202-2019-09-03-16-35-42.json"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/Ford"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/developer.ford.com\/"
+        }
+    ]
+}
