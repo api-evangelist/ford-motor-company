@@ -1,0 +1,159 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0",
+        "title": "Auto Complete API",
+        "description": "Auto Complete API Overview The Composite Service Auto Complete API is a REST-based service communicating via HTTPS and JSON that facilitates the FP Type Ahead functionality. All requests to the API must be via HTTPS (SSL).           ### Testing account    Contact document author to set up.     ***Changes***   | Version | Changes |   |  ------------ | ------------- |   | 0.1 | Document set up. |   | 0.2 | Added security. |   | 0.3 | Added field \"query\" in response of \/autoComplete\/suggestion. |   | 1.0 | Released. Minor updates to description. |     | 1.0.1 | Update basePath, endpoints, changed POC to Percy and add license section for APIM update |    #### ---------------------------------------------------------------    ",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/qa.api.mps.ford.com\/api\/autocomplete"
+    ],
+    "paths": {
+        "\/v2\/suggestion": {
+            "post": {
+                "summary": "v2SuggestionPost",
+                "description": "Returns a list of possible Points of Interest or brands based on the original query string in the request.  ** Sort_by Value Lookup Table (WIP) **   Key | Value      ------------ | -------------     1 | query first (default)     2 | entity first ",
+                "operationId": "5b198b49a8f8e0138c330444",
+                "deprecated": 0,
+                "parameters": []
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "GenericResponse": {
+                "type": "object",
+                "properties": {
+                    "request_time": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "status": {
+                "type": "object",
+                "properties": {
+                    "errorCode": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "SuggestionInputBody": {
+                "type": "object",
+                "properties": {
+                    "device": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "search_details": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "device": {
+                "type": "object"
+            },
+            "search_details": {
+                "type": "object"
+            },
+            "SuggestionInputBodyDevice": {
+                "type": "object",
+                "properties": {
+                    "current_lat": {
+                        "description": "Latitude of the device making the call to the CSL. If unknown, pass a value of -999.999.",
+                        "type": "number"
+                    },
+                    "current_lng": {
+                        "description": "Longitude of the device making the call to the CSL. If unknown, pass a value of -999.999.",
+                        "type": "number"
+                    }
+                }
+            },
+            "SuggestionInputBodySearchDetails": {
+                "type": "object",
+                "properties": {
+                    "limit": {
+                        "description": "Maximum number of results in response. Defaults to ten (10) when not present.",
+                        "type": "integer"
+                    },
+                    "locale": {
+                        "description": "The default value is \"en-us\" when not present.",
+                        "type": "string"
+                    },
+                    "query": {
+                        "description": "The input string that suggestions will be made on. The minimum length is three (3) letters\/numbers or two (2) characters. It could be partial\/full landmark name, partial\/full street address or partial\/full name of a destination category.",
+                        "type": "string"
+                    },
+                    "search_lat": {
+                        "description": "Latitude of the center point of search.",
+                        "type": "number"
+                    },
+                    "search_lng": {
+                        "description": "Longitude of the center point of search.",
+                        "type": "number"
+                    },
+                    "sort_by": {
+                        "description": "The field by which the results are ordered. The default value is 1 when not present. See Sort_by Value Lookup Table for other supported values.",
+                        "type": "integer"
+                    },
+                    "sort_order": {
+                        "description": "The only accepted values include \"asc\" for ascending order, and \"desc\" for descending order. The default value is \"desc\" when not present. This field is ignored when value of \"sort_by\" is set to 1 or 2.",
+                        "type": "string"
+                    }
+                }
+            },
+            "SuggestionReturn": {
+                "type": "object",
+                "properties": {
+                    "request_time": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "suggestions": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "suggestions": {
+                "type": "array"
+            },
+            "SuggestionReturnSuggestions": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "Only included when the suggestion type is \"entity\".",
+                        "type": "string"
+                    },
+                    "label": {
+                        "description": "Complete name of a place, a category of places, or a brand.",
+                        "type": "string"
+                    },
+                    "query": {
+                        "description": "The input string that suggestions will be made on. The minimum length is three (3) letters\/numbers or two (2) characters. It could be partial\/full landmark name, partial\/full street address or partial\/full name of a destination category.",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "Type of suggestion. Possible values include \"query\" (as a category of places, or a brand), \"entity\" (as a point of interest), and etc.",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
