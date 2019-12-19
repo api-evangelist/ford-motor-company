@@ -1,0 +1,36 @@
+{
+    "id": "94c1c37ff089f811f6124779070b1375",
+    "name": "Auto Complete API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "227be504b970ca2226502538a232365c",
+            "name": "v2SuggestionPost",
+            "url": "http:\/\/qa.api.mps.ford.com\/api\/autocomplete\/v2\/suggestion",
+            "description": "Returns a list of possible Points of Interest or brands based on the original query string in the request.  ** Sort_by Value Lookup Table (WIP) **   Key | Value      ------------ | -------------     1 | query first (default)     2 | entity first ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "94c1c37ff089f811f6124779070b1375",
+            "rawModeData": ""
+        }
+    ]
+}
