@@ -9,8 +9,8 @@
         "have api",
         "have swagger"
     ],
-    "created": "2019-12-19",
-    "modified": "2019-12-19",
+    "created": "2019-12-21",
+    "modified": "2019-12-21",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/ford-motor-company\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -24,15 +24,15 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/ford-motor-company-openapi.json"
-                },
-                {
-                    "type": "x-openapi",
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ford-motor-company.json"
                 },
                 {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/ford-motor-company\/master\/ford-motor-company-openapi.json"
+                },
+                {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/ford-motor-company-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/ford-motor-company\/master\/ford-motor-company-postman-collection.json"
                 }
             ]
         },
@@ -46,21 +46,25 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/auto-complete-api-openapi.json"
-                },
-                {
-                    "type": "x-openapi",
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/auto-complete-api.json"
                 },
                 {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/ford-motor-company\/master\/auto-complete-api-openapi.json"
+                },
+                {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/auto-complete-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/ford-motor-company\/master\/auto-complete-api-postman-collection.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "Blog",
             "url": "https:\/\/developer.ford.com\/community\/blogs\/"
